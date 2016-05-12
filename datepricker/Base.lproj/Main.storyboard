@@ -24,20 +24,10 @@
                                     <constraint firstAttribute="height" constant="21" id="eJl-Tj-2Iv"/>
                                     <constraint firstAttribute="width" constant="323" id="vMN-Eo-J5T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4T7-zP-1BM">
-                                <rect key="frame" x="0.0" y="115" width="600" height="216"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="7QR-7c-s2f"/>
-                                    <constraint firstAttribute="height" constant="216" id="96I-ZY-Wdb"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="484757699.853302">
-                                    <!--2016-05-12 14:54:59 +0000-->
-                                </date>
-                            </datePicker>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A1B-Ol-IXc">
                                 <rect key="frame" x="0.0" y="349" width="600" height="251"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,39 +63,54 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4n-ey-AVK">
-                                <rect key="frame" x="505" y="73" width="34" height="30"/>
+                                <rect key="frame" x="480" y="73" width="59" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="n51-bs-wnp"/>
-                                    <constraint firstAttribute="width" constant="34" id="oCW-Nr-Cgl"/>
+                                    <constraint firstAttribute="width" constant="59" id="1LW-6p-efw"/>
+                                    <constraint firstAttribute="height" constant="30" id="GaS-Cf-2Ed"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="19"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fpq-FM-LsM"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What do you need to do?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TEt-AP-W10">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What do you need to do?" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TEt-AP-W10">
                                 <rect key="frame" x="159" y="39" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.34161479101520231" green="0.80182243098956552" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.1071623689" green="0.90668706290000001" blue="0.68151770099999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9CA-AC-W4b"/>
                                     <constraint firstAttribute="width" constant="283" id="R4j-A1-FBx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.48868389547964197" green="1" blue="0.55579729951663159" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4T7-zP-1BM">
+                                <rect key="frame" x="0.0" y="115" width="600" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="7QR-7c-s2f"/>
+                                    <constraint firstAttribute="height" constant="216" id="96I-ZY-Wdb"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="484757699.853302">
+                                    <!--2016-05-12 14:54:59 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1071623689" green="0.90668706290000001" blue="0.68151770099999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A4n-ey-AVK" secondAttribute="trailing" constant="41" id="74V-jW-J0k"/>
                             <constraint firstItem="E1e-gV-eFc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8D4-9f-8cZ"/>
                             <constraint firstItem="TEt-AP-W10" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="BrN-69-KOu"/>
                             <constraint firstItem="A1B-Ol-IXc" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="CEp-hq-xVe"/>
-                            <constraint firstItem="4T7-zP-1BM" firstAttribute="top" secondItem="A4n-ey-AVK" secondAttribute="bottom" constant="12" id="bKW-K0-akb"/>
                             <constraint firstItem="A1B-Ol-IXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bLc-wC-GFF"/>
+                            <constraint firstItem="A4n-ey-AVK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="hex-r5-HRf"/>
                             <constraint firstAttribute="trailing" secondItem="A1B-Ol-IXc" secondAttribute="trailing" id="m5e-mE-A4t"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="A4n-ey-AVK" secondAttribute="trailing" constant="41" id="o4p-80-1pc"/>
                             <constraint firstItem="4T7-zP-1BM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opY-Sc-2rY"/>
-                            <constraint firstItem="A4n-ey-AVK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="pXT-xH-ElQ"/>
                             <constraint firstItem="E1e-gV-eFc" firstAttribute="top" secondItem="TEt-AP-W10" secondAttribute="bottom" constant="8" id="tEF-wf-hxp"/>
                             <constraint firstItem="TEt-AP-W10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIX-CN-qfT"/>
+                            <constraint firstItem="4T7-zP-1BM" firstAttribute="top" secondItem="A4n-ey-AVK" secondAttribute="bottom" constant="12" id="vt5-Kb-Zhm"/>
                             <constraint firstItem="A1B-Ol-IXc" firstAttribute="top" secondItem="4T7-zP-1BM" secondAttribute="bottom" constant="18" id="zW2-Ng-FwJ"/>
                         </constraints>
                     </view>

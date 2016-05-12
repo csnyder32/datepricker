@@ -25,8 +25,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func datePickerChanged(datePicker: UIDatePicker) {
         let dateFormatter = NSDateFormatter()
 
-        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateFormat = "MM/dd/yy"
+        //dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
 
         let strDate = dateFormatter.stringFromDate(datePicker.date)
 
@@ -38,6 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func saveAction(sender: AnyObject) {
         tableView.reloadData()
         item.append(itemTextField.text!)
+        itemTextField.text = ""
     }
     
 
@@ -56,5 +57,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell!
     }
 
+
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        dates.removeAtIndex(indexPath.row)
+        tableView.reloadData()
+    }
+
+    
 }
 
